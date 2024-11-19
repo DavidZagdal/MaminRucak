@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121212"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".ScrollingActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <TextView
+                android:id="@+id/txt_jelo"
+                android:layout_width="333dp"
+                android:layout_height="63dp"
+                android:background="@drawable/roundedcard"
+                android:gravity="center"
+                android:text="Unos jela ili priloga"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.692" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="156dp">
+
+            <EditText
+                android:id="@+id/ime_jela"
+                android:layout_width="250dp"
+                android:layout_height="72dp"
+                android:background="@drawable/rounded_white"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.837"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/text_plain_ime"
+                android:layout_width="82dp"
+                android:layout_height="49dp"
+                android:background="@drawable/roundedcard"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Ime hrane"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.051"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="232dp">
+
+            <TextView
+                android:id="@+id/text_bacgkround"
+                android:layout_width="349dp"
+                android:layout_height="91dp"
+                android:background="@drawable/roundedcard"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.82" />
+
+            <Button
+                android:id="@+id/btn_provjeri"
+                android:layout_width="234dp"
+                android:layout_height="61dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#00CBFF"
+                android:text="PROVJERI SLIČNE REZULTATE"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <TextView
+                android:id="@+id/text_slicnost"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:maxLines="3"
+
+                android:text="Tu će pisati ako postoji slicna ili ista hrana u bazi podataka."
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.705" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp">
+
+            <Button
+                android:id="@+id/btn_dodaj_u_json"
+                android:layout_width="155dp"
+                android:layout_height="68dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#00CBFF"
+                android:text="DODAJ"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/backImg"
+                android:layout_width="58dp"
+                android:layout_height="53dp"
+                android:background="@drawable/backimage"
+                android:backgroundTint="#00CBFF"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

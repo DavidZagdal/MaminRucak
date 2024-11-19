@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mamin ručak</string>
+    <string name="large_text">
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="load_videos">Load Videos</string>
+    <string name="press_the_button_to_load_all_videos">Press the button to load all videos.</string>
+</resources>
