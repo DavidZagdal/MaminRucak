@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/background_dark"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".ScrollingActivity">
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,9 +19,9 @@
             android:layout_width="295dp"
             android:layout_height="83dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="RANDOM"
-            android:textColor="#000000"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/random_text"
+            android:textColor="@color/black"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
             android:gravity="center"
             android:text=""
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +62,7 @@
             android:gravity="center"
             android:text=""
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -77,8 +77,8 @@
             android:layout_width="53dp"
             android:layout_height="54dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="+"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/btn_add_day_text"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -92,8 +92,8 @@
             android:layout_width="55dp"
             android:layout_height="53dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="🗓️"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/btn_calendar_text"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="302dp">
-
 
         <ScrollView
             android:layout_width="300dp"
@@ -133,7 +132,7 @@
                     android:gravity="center"
                     android:text=""
                     android:textAlignment="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="34sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -150,24 +149,22 @@
             android:layout_width="65dp"
             android:layout_height="57dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="-"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/btn_minus_text"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.111"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnTablica"
             android:layout_width="65dp"
             android:layout_height="57dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="📜"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/btn_table_text"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -180,8 +177,8 @@
             android:layout_width="65dp"
             android:layout_height="57dp"
             android:background="@drawable/roundedbutton"
-            android:backgroundTint="#00CBFF"
-            android:text="+"
+            android:backgroundTint="@color/button_tint"
+            android:text="@string/btn_add_text"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -190,6 +187,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </LinearLayout>

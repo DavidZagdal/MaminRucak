@@ -2,15 +2,27 @@ plugins {
     id 'com.android.application'
 }
 
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+if (apikeyPropertiesFile.exists()) {
+    apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+}
+
 android {
-    compileSdk 31
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdk 26
-        targetSdk 31
+        targetSdk 34
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "URL", "\"${apikeyProperties['URL']}\""
+        buildConfigField "String", "URL_PO_DANIMA", "\"${apikeyProperties['URL_PO_DANIMA']}\""
+        buildConfigField "String", "URL_PO_TJEDNU", "\"${apikeyProperties['URL_PO_TJEDNU']}\""
+        buildConfigField "String", "MASTER_KEY", "\"${apikeyProperties['MASTER_KEY']}\""
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -11,4 +11,6 @@
     <color name="colorPrimaryDark">#181818</color>
     <color name="colorAccent">#181818</color>
     <color name="whiteColor">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="button_tint">#00CBFF</color>
 </resources>

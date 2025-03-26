@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#121212"
+    android:background="@color/background_dark"
     android:orientation="vertical"
     android:weightSum="100">
 
+    <!-- Top section (15% weight) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="15"
         android:layout_height="0dp"
-        android:background="#121212"
+        android:background="@color/background_dark"
         android:fitsSystemWindows="true"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"
         tools:context=".ScrollingActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,9 +30,9 @@
                 android:layout_height="63dp"
                 android:background="@drawable/roundedcard"
                 android:gravity="center"
-                android:text="Tablica"
+                android:text="@string/txt_naslov_text"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -47,49 +43,34 @@
                 tools:layout_editor_absoluteX="39dp"
                 tools:layout_editor_absoluteY="26dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </LinearLayout>
 
-
-
+    <!-- Middle section (75% weight) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="75"
         android:layout_height="0dp"
-        android:background="#121212"
+        android:background="@color/background_dark"
         android:fitsSystemWindows="true"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14"
         tools:context=".ScrollingActivity">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+        <!-- Nested container with weightSum -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#121212"
+            android:background="@color/background_dark"
             android:orientation="vertical"
             android:weightSum="100">
 
-
+            <!-- First row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -103,36 +84,26 @@
                         android:background="@drawable/roundedcard"
                         android:gravity="center"
                         android:text=""
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.692" />
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
-
-
-
-
+            <!-- Second row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -147,7 +118,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -156,22 +127,16 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
+            <!-- Third row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -186,7 +151,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -195,22 +160,16 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
+            <!-- Fourth row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -225,7 +184,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -234,22 +193,16 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
+            <!-- Fifth row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -264,7 +217,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -273,22 +226,15 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -303,7 +249,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -312,22 +258,16 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
 
+            <!-- Sixth row -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_weight="14"
                 android:layout_height="0dp"
-                android:background="#121212"
+                android:background="@color/background_dark"
                 android:fitsSystemWindows="true"
                 android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.005"
                 tools:context=".ScrollingActivity">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -342,7 +282,7 @@
                         android:gravity="center"
                         android:text=""
                         android:textAlignment="center"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="22sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -351,28 +291,18 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.692" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
+    <!-- Bottom section (10% weight) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_weight="10"
         android:layout_height="0dp"
-        android:background="#121212"
+        android:background="@color/background_dark"
         android:fitsSystemWindows="true"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"
         tools:context=".ScrollingActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -380,15 +310,14 @@
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="3dp">
 
-
             <Button
                 android:id="@+id/btn_back3"
                 android:layout_width="58dp"
                 android:layout_height="53dp"
                 android:background="@drawable/backimage"
-                android:backgroundTint="#00CBFF"
+                android:backgroundTint="@color/button_tint"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -402,8 +331,8 @@
                 android:layout_width="72dp"
                 android:layout_height="69dp"
                 android:background="@drawable/roundedbutton"
-                android:backgroundTint="#00CBFF"
-                android:text="+"
+                android:backgroundTint="@color/button_tint"
+                android:text="@string/btnTablicaDodaj_text"
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -412,14 +341,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
-
             <Button
                 android:id="@+id/btnTablicaTjedana"
                 android:layout_width="72dp"
                 android:layout_height="69dp"
                 android:background="@drawable/roundedbutton"
-                android:backgroundTint="#00CBFF"
-                android:text="📜"
+                android:backgroundTint="@color/button_tint"
+                android:text="@string/btnTablicaTjedana_text"
                 android:textSize="34sp"
                 app:layout_constraintHorizontal_bias="0.53"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -427,10 +355,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </LinearLayout>
-
-
 </LinearLayout>

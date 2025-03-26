@@ -53,9 +53,9 @@ public class ScrollingActivity extends AppCompatActivity {
 
     //private YouTubePlayerView youTubePlayerView;
 
-    private static String url = "";
-    private static String url2_poDanima = "";
-    private static String masterkey = "";
+    private static String url = BuildConfig.URL;
+    private static String url2_poDanima = BuildConfig.URL_PO_DANIMA;
+    private static String masterkey = BuildConfig.MASTER_KEY;
     private String resultInString = "";
     private String resultForDays = "";
     private ArrayList<String> resultArrayList = new ArrayList<>();

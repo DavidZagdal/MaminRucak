@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,10 +11,9 @@
         tools:context=".ScrollingActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#121212"
+        android:background="@color/background_dark"
         android:fitsSystemWindows="true"
         android:orientation="vertical">
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -30,9 +30,9 @@
                 android:layout_height="63dp"
                 android:background="@drawable/roundedcard"
                 android:gravity="center"
-                android:text="Izbriši krivi unos"
+                android:text="@string/txt_jelo_text"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="39dp"
@@ -52,7 +52,7 @@
                 android:inputType="textPersonName"
                 android:minHeight="48dp"
                 android:textAlignment="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,8 +71,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPersonName"
-                android:text="Ime unosa"
-                android:textColor="#FFFFFF"
+                android:text="@string/text_plain_ime"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +93,7 @@
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -106,9 +106,9 @@
                 android:layout_width="234dp"
                 android:layout_height="61dp"
                 android:background="@drawable/roundedbutton"
-                android:backgroundTint="#00CBFF"
-                android:text="PROVJERI DA LI JE NAĐEN UNOS"
-                android:textColor="#000000"
+                android:backgroundTint="@color/button_tint"
+                android:text="@string/btn_provjeri2_text"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -124,9 +124,8 @@
                 android:ems="10"
                 android:gravity="center"
                 android:maxLines="3"
-
-                android:text="Tu će pisati ako postoji slicna ili ista hrana u bazi podataka."
-                android:textColor="#FFFFFF"
+                android:text="@string/text_slicnost2_text"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -145,9 +144,9 @@
                 android:layout_width="155dp"
                 android:layout_height="68dp"
                 android:background="@drawable/roundedbutton"
-                android:backgroundTint="#00CBFF"
-                android:text="IZBRIŠI"
-                android:textColor="#000000"
+                android:backgroundTint="@color/button_tint"
+                android:text="@string/btn_izbrisi_text"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -170,13 +169,12 @@
                 android:layout_width="58dp"
                 android:layout_height="53dp"
                 android:background="@drawable/backimage"
-                android:backgroundTint="#00CBFF"
+                android:backgroundTint="@color/button_tint"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </LinearLayout>
 </LinearLayout>

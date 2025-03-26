@@ -43,10 +43,9 @@ public class PoDanima extends AppCompatActivity {
 
     Button backImg;
 
-    private static String url2 = "";
-    private static String url_tjedan = "";
-    private static String masterkey = "";
-    private static String acceskey = "";
+    private static String url2 = BuildConfig.URL_PO_DANIMA;
+    private static String url_tjedan = BuildConfig.URL_PO_TJEDNU;
+    private static String masterkey = BuildConfig.MASTER_KEY;
     private String resultInString = "";
 
     String jsonRezultat = "";
